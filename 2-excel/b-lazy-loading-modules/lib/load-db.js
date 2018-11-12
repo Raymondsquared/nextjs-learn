@@ -1,5 +1,5 @@
 export default async () => {
-  const firebase = require('firebase')
+  const firebase = await import('firebase');
 
   try {
     firebase.initializeApp({
