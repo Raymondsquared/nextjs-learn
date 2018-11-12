@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const PostLink = ({ show }) => (
   <li key={show.id}>
+    <span>Link:</span>
     <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
       <a>{show.name}</a>
     </Link>
@@ -32,6 +33,7 @@ const PostLink = ({ show }) => (
 const Index = (props) => (
   <Layout>
     <h1>Batman TV Shows</h1>
+    <span>List:</span>
     <ul>
       {
         props.shows.map(
@@ -50,6 +52,15 @@ const Index = (props) => (
 
           ul {
             padding: 0;
+          }
+        `
+      }
+    </style>
+    <style jsx global>
+      {
+        `
+          span {
+            color: green;
           }
         `
       }
