@@ -1,0 +1,25 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "analyze": "cross-env ANALYZE=1 next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^5.0.1",
+    "express": "^4.15.2",
+    "firebase": "^4.1.3",
+    "next": "^6.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack-bundle-analyzer": "^2.8.3"
+  }
+}
